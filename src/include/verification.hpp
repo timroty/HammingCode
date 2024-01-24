@@ -1,5 +1,5 @@
-#ifndef VERIFICATION_H
-#define VERIFICATION_H
+#ifndef VERIFICATION_HPP
+#define VERIFICATION_HPP
 
 #include <string>
 

@@ -1,6 +1,8 @@
-#include "verification.h"
 #include <cmath>
 #include <filesystem>
+
+#include "include/verification.hpp"
+#include "include/constants.hpp"
 
 using namespace std;
 
@@ -13,8 +15,9 @@ namespace Verification {
   }
 
   bool isValidProgramParameters(int argc, char* argv[]) {
-      return argc >= 3
-        && (filesystem::exists(argv[1]) && filesystem::is_regular_file(argv[1]))
-        && (filesystem::exists(argv[2]) && filesystem::is_regular_file(argv[2]));
+    return argc >= 4
+      && (strcmp(argv[1], Constants::STR_ENCODE) == 0 || strcmp(argv[1], Constants::STR_DECODE) == 0)
+      && (filesystem::exists(argv[2]) && filesystem::is_regular_file(argv[2]))
+      && (filesystem::exists(argv[3]) && filesystem::is_regular_file(argv[3]));
   }
 }
