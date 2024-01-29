@@ -2,8 +2,10 @@
 #include <fstream>
 #include <vector>
 
-#include "include/verification.hpp"
+#include "include/constants.hpp"
 #include "include/file.hpp"
+#include "include/hammingCode.hpp"
+#include "include/verification.hpp"
 
 using namespace std;
 
@@ -15,7 +17,13 @@ int main(int argc, char* argv[]) {
 
     vector<int> input = File::read(argv[2]);
 
-    cout << "ran!" << endl;
+    HammingCode hammingCode(Constants::INT_CODEWORD_LENGTH, Constants::INT_PARITY_BITS, Constants::INT_DATA_BITS);
+    if (strcmp(argv[1], Constants::STR_ENCODE)){
+        //vector<int> test = {1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1};
+        vector<int> result = hammingCode.encode(input);
+    } else {
+        
+    }
 
     return 0;
 }

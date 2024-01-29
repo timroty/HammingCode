@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 
+#include "include/constants.hpp"
 #include "include/file.hpp"
 
 using namespace std;
@@ -19,6 +20,13 @@ namespace File {
       char value;
       while (inputFile >> value) {
           int intValue = value - '0';
+
+          // Ensure only 1's and 0's
+          if (intValue != 0){
+            cout << "Invlaid input value of '" << value << "'. Casting to 1." << endl;
+            intValue = 1;
+          }
+            
           values.push_back(intValue);
       }
 

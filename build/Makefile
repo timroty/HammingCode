@@ -177,6 +177,30 @@ src/file.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/src/file.cpp.s
 .PHONY : src/file.cpp.s
 
+src/hammingCode.o: src/hammingCode.cpp.o
+.PHONY : src/hammingCode.o
+
+# target to build an object file
+src/hammingCode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/src/hammingCode.cpp.o
+.PHONY : src/hammingCode.cpp.o
+
+src/hammingCode.i: src/hammingCode.cpp.i
+.PHONY : src/hammingCode.i
+
+# target to preprocess a source file
+src/hammingCode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/src/hammingCode.cpp.i
+.PHONY : src/hammingCode.cpp.i
+
+src/hammingCode.s: src/hammingCode.cpp.s
+.PHONY : src/hammingCode.s
+
+# target to generate assembly for a file
+src/hammingCode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/src/hammingCode.cpp.s
+.PHONY : src/hammingCode.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... src/file.o"
 	@echo "... src/file.i"
 	@echo "... src/file.s"
+	@echo "... src/hammingCode.o"
+	@echo "... src/hammingCode.i"
+	@echo "... src/hammingCode.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

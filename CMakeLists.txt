@@ -11,6 +11,7 @@ add_executable(HammingCode
   src/constants.cpp
   src/verification.cpp
   src/file.cpp
+  src/hammingCode.cpp
 )
 
 # Include directories for headers
