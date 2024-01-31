@@ -36,9 +36,7 @@
 
 # Build
 build/*
-!build/Makefile
 !build/CMakeLists.txt
 
 tests/build/*
-!tests/build/Makefile
 !tests/build/CMakeLists.txt
