@@ -6,6 +6,8 @@ A simple extended Hamming Code implementation in C++.
 - Cmake `3.10`
 - clang version `17`
 
+
+#### Program
 1. Navigate to the ```build``` directory and run ```cmake .```.
 2. Compile the program using ```make```.
 3. Run the executable ```HammingCode```. The program expects 3 arguments in the following order:
