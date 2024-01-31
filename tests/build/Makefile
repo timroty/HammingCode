@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.21.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/timroty/Documents/GitHub/HammingCode/build
+CMAKE_SOURCE_DIR = /Users/timroty/Documents/GitHub/HammingCode/tests/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/timroty/Documents/GitHub/HammingCode/build
+CMAKE_BINARY_DIR = /Users/timroty/Documents/GitHub/HammingCode/tests/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timroty/Documents/GitHub/HammingCode/build/CMakeFiles /Users/timroty/Documents/GitHub/HammingCode/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timroty/Documents/GitHub/HammingCode/tests/build/CMakeFiles /Users/timroty/Documents/GitHub/HammingCode/tests/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timroty/Documents/GitHub/HammingCode/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/timroty/Documents/GitHub/HammingCode/tests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HammingCode
+# Target rules for targets named HammingCodeTests
 
 # Build rule for target.
-HammingCode: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HammingCode
-.PHONY : HammingCode
+HammingCodeTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HammingCodeTests
+.PHONY : HammingCodeTests
 
 # fast build rule for target.
-HammingCode/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/build
-.PHONY : HammingCode/fast
+HammingCodeTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/build
+.PHONY : HammingCodeTests/fast
 
 Users/timroty/Documents/GitHub/HammingCode/src/constants.o: Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.o
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/constants.o
 
 # target to build an object file
 Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.o
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.o
 
 Users/timroty/Documents/GitHub/HammingCode/src/constants.i: Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.i
@@ -142,7 +142,7 @@ Users/timroty/Documents/GitHub/HammingCode/src/constants.i: Users/timroty/Docume
 
 # target to preprocess a source file
 Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.i
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.i
 
 Users/timroty/Documents/GitHub/HammingCode/src/constants.s: Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.s
@@ -150,39 +150,15 @@ Users/timroty/Documents/GitHub/HammingCode/src/constants.s: Users/timroty/Docume
 
 # target to generate assembly for a file
 Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.s
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/constants.cpp.s
-
-Users/timroty/Documents/GitHub/HammingCode/src/file.o: Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.o
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/file.o
-
-# target to build an object file
-Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.o
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.o
-
-Users/timroty/Documents/GitHub/HammingCode/src/file.i: Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.i
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/file.i
-
-# target to preprocess a source file
-Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.i
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.i
-
-Users/timroty/Documents/GitHub/HammingCode/src/file.s: Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.s
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/file.s
-
-# target to generate assembly for a file
-Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.s
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/file.cpp.s
 
 Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.o: Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.o
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.o
 
 # target to build an object file
 Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.o
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.o
 
 Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.i: Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.i
@@ -190,7 +166,7 @@ Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.i: Users/timroty/Docu
 
 # target to preprocess a source file
 Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.i
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.i
 
 Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.s: Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.s
@@ -198,39 +174,15 @@ Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.s: Users/timroty/Docu
 
 # target to generate assembly for a file
 Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.s
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.cpp.s
-
-Users/timroty/Documents/GitHub/HammingCode/src/main.o: Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.o
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/main.o
-
-# target to build an object file
-Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.o
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.o
-
-Users/timroty/Documents/GitHub/HammingCode/src/main.i: Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.i
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/main.i
-
-# target to preprocess a source file
-Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.i
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.i
-
-Users/timroty/Documents/GitHub/HammingCode/src/main.s: Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.s
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/main.s
-
-# target to generate assembly for a file
-Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.s
-.PHONY : Users/timroty/Documents/GitHub/HammingCode/src/main.cpp.s
 
 Users/timroty/Documents/GitHub/HammingCode/src/verification.o: Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.o
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/verification.o
 
 # target to build an object file
 Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.o
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.o
 
 Users/timroty/Documents/GitHub/HammingCode/src/verification.i: Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.i
@@ -238,7 +190,7 @@ Users/timroty/Documents/GitHub/HammingCode/src/verification.i: Users/timroty/Doc
 
 # target to preprocess a source file
 Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.i
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.i
 
 Users/timroty/Documents/GitHub/HammingCode/src/verification.s: Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.s
@@ -246,8 +198,32 @@ Users/timroty/Documents/GitHub/HammingCode/src/verification.s: Users/timroty/Doc
 
 # target to generate assembly for a file
 Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCode.dir/build.make CMakeFiles/HammingCode.dir/Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.s
 .PHONY : Users/timroty/Documents/GitHub/HammingCode/src/verification.cpp.s
+
+Users/timroty/Documents/GitHub/HammingCode/tests/main.o: Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.o
+.PHONY : Users/timroty/Documents/GitHub/HammingCode/tests/main.o
+
+# target to build an object file
+Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.o
+.PHONY : Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.o
+
+Users/timroty/Documents/GitHub/HammingCode/tests/main.i: Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.i
+.PHONY : Users/timroty/Documents/GitHub/HammingCode/tests/main.i
+
+# target to preprocess a source file
+Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.i
+.PHONY : Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.i
+
+Users/timroty/Documents/GitHub/HammingCode/tests/main.s: Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.s
+.PHONY : Users/timroty/Documents/GitHub/HammingCode/tests/main.s
+
+# target to generate assembly for a file
+Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HammingCodeTests.dir/build.make CMakeFiles/HammingCodeTests.dir/Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.s
+.PHONY : Users/timroty/Documents/GitHub/HammingCode/tests/main.cpp.s
 
 # Help Target
 help:
@@ -257,22 +233,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... HammingCode"
+	@echo "... HammingCodeTests"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/constants.o"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/constants.i"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/constants.s"
-	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/file.o"
-	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/file.i"
-	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/file.s"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.o"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.i"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/hammingCode.s"
-	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/main.o"
-	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/main.i"
-	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/main.s"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/verification.o"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/verification.i"
 	@echo "... Users/timroty/Documents/GitHub/HammingCode/src/verification.s"
+	@echo "... Users/timroty/Documents/GitHub/HammingCode/tests/main.o"
+	@echo "... Users/timroty/Documents/GitHub/HammingCode/tests/main.i"
+	@echo "... Users/timroty/Documents/GitHub/HammingCode/tests/main.s"
 .PHONY : help
 
 

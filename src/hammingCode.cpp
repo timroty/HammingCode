@@ -46,18 +46,11 @@ vector<int> HammingCode::encode(const vector<int>& inputVector) {
   return encodedBits;
 }
 
-int getValueOrDefault(const vector<int>& inputVector, int index) {
-  if (index < inputVector.size()){
-    return inputVector[index];
-  }
-  return 0;
-}
-
-void HammingCode::calculateParityBits(vector<int>& inputVector, int bits, int trueBits) {
+void HammingCode::calculateParityBits(vector<int>& inputVector, int bitsXOR, int trueBits) {
   int bitPostion = 2 << (parityBits - 2);
 
   while (bitPostion > 0) {
-    int parityBit = (bitPostion & bits) > 0;
+    int parityBit = (bitPostion & bitsXOR) > 0;
     inputVector[bitPostion] = parityBit; 
     trueBits += parityBit;
 

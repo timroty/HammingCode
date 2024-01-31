@@ -15,7 +15,7 @@ class HammingCode {
     HammingCode(int codeWordLength, int parityBits, int dataBits);
 
     std::vector<int> encode(const std::vector<int>& inputVector);
-    void calculateParityBits(std::vector<int>& inputVector, int bits, int trueBits);
+    void calculateParityBits(std::vector<int>& inputVector, int bitsXOR, int trueBits);
     bool isParityBit(int index);
 };
 
